@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Módulo 2 - Rutina digital saludable</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body class="pagina-modulo">
+
+    <header>
+
+        <div class="logo">
+            💙 Digital Balance
+        </div>
+
+        <nav>
+
+            <a href="index.html" id="m2r-menu-inicio">
+                Inicio
+            </a>
+
+            <div class="menu-modulos">
+
+                <a href="#" id="m2r-menu-modulos">
+                    Módulos ▾
+                </a>
+
+                <div class="submenu">
+
+                    <a href="modulo1.html">Módulo 1</a>
+                    <a href="modulo2.html">Módulo 2</a>
+                    <a href="modulo3.html">Módulo 3</a>
+                    <a href="modulo4.html">Módulo 4</a>
+                    <a href="modulo5.html">Módulo 5</a>
+
+                </div>
+
+            </div>
+
+            <a href="creditos.html" id="m2r-menu-creditos">
+                Créditos
+            </a>
+
+            <div class="idioma">
+
+                <button onclick="guardarYTraducir('es')">
+                    ES
+                </button>
+
+                <span>|</span>
+
+                <button onclick="guardarYTraducir('en')">
+                    EN
+                </button>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <main class="modulo">
+
+        <section class="introduccion-modulo">
+
+            <div class="texto-modulo">
+
+                <span class="etiqueta" id="m2r-etiqueta">
+                    MÓDULO 2
+                </span>
+
+                <h1 id="m2r-titulo">
+                    Rutina digital saludable
+                </h1>
+
+                <p id="m2r-descripcion">
+                    Una rutina digital saludable permite organizar mejor
+                    el tiempo de estudio, descanso y entretenimiento,
+                    evitando distracciones innecesarias.
+                </p>
+
+            </div>
+
+
+            <div class="imagen-modulo">
+
+                <img src="imagenes/tiempo.png"
+                     alt="Ilustración sobre una rutina digital saludable">
+
+            </div>
+
+        </section>
+
+
+        <section class="quiz-rutina">
+
+            <h2 id="m2r-quiz-titulo">
+                🗓️ Quiz: construye una rutina digital saludable
+            </h2>
+
+            <p id="m2r-quiz-descripcion">
+                Responde las siguientes preguntas para conocer qué tan
+                saludable es tu rutina diaria con la tecnología.
+            </p>
+
+
+            <div class="quiz-pregunta">
+
+                <h3 id="m2r-pregunta1">
+                    1. ¿Qué haces cuando necesitas estudiar?
+                </h3>
+
+                <button
+                    id="m2r-p1-correcta"
+                    onclick="responderRutina(1, 'correcta', this)">
+                    📚 Alejo las distracciones y me concentro
+                </button>
+
+                <button
+                    id="m2r-p1-incorrecta"
+                    onclick="responderRutina(1, 'incorrecta', this)">
+                    📱 Reviso constantemente las redes sociales
+                </button>
+
+            </div>
+
+
+            <div class="quiz-pregunta">
+
+                <h3 id="m2r-pregunta2">
+                    2. ¿Qué es recomendable hacer después de pasar
+                    bastante tiempo frente a una pantalla?
+                </h3>
+
+                <button
+                    id="m2r-p2-correcta"
+                    onclick="responderRutina(2, 'correcta', this)">
+                    👀 Hacer una pausa y descansar
+                </button>
+
+                <button
+                    id="m2r-p2-incorrecta"
+                    onclick="responderRutina(2, 'incorrecta', this)">
+                    💻 Continuar sin hacer ninguna pausa
+                </button>
+
+            </div>
+
+
+            <div class="quiz-pregunta">
+
+                <h3 id="m2r-pregunta3">
+                    3. ¿Cómo puedes mantener una rutina digital equilibrada?
+                </h3>
+
+                <button
+                    id="m2r-p3-correcta"
+                    onclick="responderRutina(3, 'correcta', this)">
+                    ⚖️ Combinar tecnología, estudio, descanso y otras actividades
+                </button>
+
+                <button
+                    id="m2r-p3-incorrecta"
+                    onclick="responderRutina(3, 'incorrecta', this)">
+                    📱 Utilizar dispositivos durante todo el día
+                </button>
+
+            </div>
+
+
+            <div id="resultado-rutina" class="resultado-quiz">
+
+                Responde las tres preguntas para conocer tu resultado.
+
+            </div>
+
+        </section>
+
+
+        <div class="navegacion-modulos">
+
+            <a href="modulo2.html"
+               class="boton"
+               id="m2r-boton-anterior">
+                ← Módulo 2
+            </a>
+
+            <a href="modulo3.html"
+               class="boton"
+               id="m2r-boton-siguiente">
+                Módulo 3 →
+            </a>
+
+        </div>
+
+    </main>
+
+
+    <footer>
+
+        Aplicaciones Multimedia - UNAD | María Valentina Céspedes Cuenca
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

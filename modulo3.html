@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Módulo 3 - Gestión del tiempo</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body class="pagina-modulo">
+
+    <header>
+
+        <div class="logo">
+            💙 Digital Balance
+        </div>
+
+        <nav>
+
+    <a href="index.html" id="m3-menu-inicio">Inicio</a>
+
+    <div class="menu-modulos">
+
+        <a href="#" id="m3-menu-modulos">Módulos ▾</a>
+
+        <div class="submenu">
+
+            <a href="modulo1.html" id="m3-submenu-modulo1">Módulo 1</a>
+            <a href="modulo2.html" id="m3-submenu-modulo2">Módulo 2</a>
+            <a href="modulo3.html" id="m3-submenu-modulo3">Módulo 3</a>
+            <a href="modulo4.html" id="m3-submenu-modulo4">Módulo 4</a>
+            <a href="modulo5.html" id="m3-submenu-modulo5">Módulo 5</a>
+
+        </div>
+
+    </div>
+
+    <a href="creditos.html" id="m3-menu-creditos">Créditos</a>
+
+    <div class="idioma">
+
+        <button onclick="guardarYTraducir('es')">ES</button>
+
+        <span>|</span>
+
+        <button onclick="guardarYTraducir('en')">EN</button>
+
+    </div>
+
+</nav>
+
+    </header>
+
+
+    <main class="modulo">
+
+        <!-- INTRODUCCIÓN DEL MÓDULO -->
+
+        <section class="introduccion-modulo">
+
+            <div class="texto-modulo">
+
+                <span class="etiqueta" id="m3-etiqueta">
+    MÓDULO 3
+</span>
+
+<h1 id="m3-titulo">
+    Gestión del tiempo
+</h1>
+
+<p id="m3-descripcion">
+    Aprender a organizar nuestro tiempo nos permite
+    aprovechar mejor nuestras actividades digitales,
+    académicas y personales. En este módulo conocerás
+    algunas estrategias para organizar tus actividades
+    y mantener momentos de descanso.
+</p>
+            </div>
+
+
+            <div class="imagen-modulo">
+
+                <img src="imagenes/tiempo.png" alt="Gestión del tiempo">
+
+            </div>
+
+        </section>
+        
+        <!-- CRONOGRAMA INTERACTIVO -->
+
+<section class="reto-tiempo">
+
+    <h2 id="m3-cronograma-titulo">
+        🕐 Cronograma de actividades
+    </h2>
+
+    <p id="m3-cronograma-descripcion">
+        Selecciona un momento del día para conocer una actividad
+        que puedes realizar en ese horario.
+    </p>
+
+    <div class="actividad-botones">
+
+        <button onclick="mostrarCronograma('mañana')" id="m3-manana">
+            🌅 Mañana
+        </button>
+
+        <button onclick="mostrarCronograma('tarde')" id="m3-tarde">
+            ☀️ Tarde
+        </button>
+
+        <button onclick="mostrarCronograma('noche')" id="m3-noche">
+            🌙 Noche
+        </button>
+
+    </div>
+
+    <div id="informacion-cronograma" class="informacion">
+
+        Selecciona un momento del día para comenzar.
+
+    </div>
+
+</section>
+
+
+        <!-- EJEMPLOS DE LA VIDA COTIDIANA -->
+
+        <section class="seccion-tarjetas">
+
+            <h2 id="m3-ejemplos-titulo">
+                📱 Ejemplos de la vida cotidiana: tu tiempo en el celular
+            </h2>
+
+            <p class="instruccion" id="m3-ejemplos-instruccion">
+                Haz clic en cada tarjeta para ver un ejemplo real y
+                cómo ponerlo en práctica.
+            </p>
+
+
+            <div class="tarjetas">
+
+                <div class="tarjeta"
+                     onclick="mostrarEjemploTiempo('limite')">
+
+                    <div class="icono">⏳</div>
+
+                    <h3 id="m3-ejemplo-limite">
+                        Límites en las apps
+                    </h3>
+
+                    <p id="m3-ejemplo-limite-desc">
+                        Define un tiempo máximo para las aplicaciones que más usas.
+                    </p>
+
+                </div>
+
+
+                <div class="tarjeta"
+                     onclick="mostrarEjemploTiempo('dormir')">
+
+                    <div class="icono">🛏️</div>
+
+                    <h3 id="m3-ejemplo-dormir">
+                        Descansar sin el celular
+                    </h3>
+
+                    <p id="m3-ejemplo-dormir-desc">
+                        Guarda el celular antes de irte a dormir.
+                    </p>
+
+                </div>
+
+
+                <div class="tarjeta"
+                     onclick="mostrarEjemploTiempo('estudio')">
+
+                    <div class="icono">🔕</div>
+
+                    <h3 id="m3-ejemplo-estudio">
+                        Estudiar sin interrupciones
+                    </h3>
+
+                    <p id="m3-ejemplo-estudio-desc">
+                        Silencia las notificaciones mientras haces tus tareas.
+                    </p>
+
+                </div>
+
+
+                <div class="tarjeta"
+                     onclick="mostrarEjemploTiempo('revisar')">
+
+                    <div class="icono">📊</div>
+
+                    <h3 id="m3-ejemplo-revisar">
+                        Revisar tu tiempo de pantalla
+                    </h3>
+
+                    <p id="m3-ejemplo-revisar-desc">
+                        Descubre cuánto tiempo pasas en cada aplicación.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div id="informacion-ejemplo-tiempo" class="informacion">
+
+                Haz clic en una tarjeta para ver el ejemplo.
+
+            </div>
+
+        </section>
+
+
+        <!-- NAVEGACIÓN -->
+
+        <div class="navegacion-modulos">
+
+    <a href="modulo2-rutina.html" class="boton" id="m3-boton-anterior">
+        ← Módulo 2
+    </a>
+
+    <a href="modulo3-pomodoro.html" class="boton" id="m3-boton-pomodoro">
+        Pomodoro →
+    </a>
+
+</div>
+
+    </main>
+
+
+    <footer>
+
+        Aplicaciones Multimedia - UNAD | María Valentina Céspedes Cuenca
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Módulo 4 - Ciberseguridad</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body class="pagina-modulo">
+
+    <header>
+
+        <div class="logo">
+            💙 Digital Balance
+        </div>
+
+        <nav>
+
+    <a href="index.html" id="m4-menu-inicio">
+        Inicio
+    </a>
+
+    <div class="menu-modulos">
+
+        <a href="#" id="m4-menu-modulos">
+            Módulos ▾
+        </a>
+
+        <div class="submenu">
+
+            <a href="modulo1.html" id="m4-submenu-modulo1">Módulo 1</a>
+            <a href="modulo2.html" id="m4-submenu-modulo2">Módulo 2</a>
+            <a href="modulo3.html" id="m4-submenu-modulo3">Módulo 3</a>
+            <a href="modulo4.html" id="m4-submenu-modulo4">Módulo 4</a>
+            <a href="modulo5.html" id="m4-submenu-modulo5">Módulo 5</a>
+
+        </div>
+
+    </div>
+
+    <a href="creditos.html" id="m4-menu-creditos">
+        Créditos
+    </a>
+
+    <div class="idioma">
+
+        <button onclick="guardarYTraducir('es')">
+            ES
+        </button>
+
+        <span>|</span>
+
+        <button onclick="guardarYTraducir('en')">
+            EN
+        </button>
+
+    </div>
+
+</nav>
+
+    </header>
+
+
+    <main class="modulo">
+
+        <!-- INTRODUCCIÓN -->
+
+        <section class="introduccion-modulo">
+
+            <div class="texto-modulo">
+
+                <span class="etiqueta" id="m4-etiqueta">
+    MÓDULO 4
+</span>
+
+<h1 id="m4-titulo">
+    Ciberseguridad
+</h1>
+
+<p id="m4-descripcion">
+    La ciberseguridad nos ayuda a utilizar la tecnología
+    de manera más segura. En este módulo aprenderás algunas
+    formas de proteger tu información y reconocer situaciones
+    que pueden representar un riesgo al utilizar internet.
+</p>
+
+            </div>
+
+
+            <div class="imagen-modulo">
+
+                <img src="imagenes/ciberseguridad.png"
+                     alt="Ciberseguridad">
+
+            </div>
+
+        </section>
+
+
+        <!-- VERDADERO O FALSO -->
+
+<section class="quiz-rutina">
+
+    <h2 id="m4-quiz-titulo">
+        🛡️ Verdadero o Falso
+    </h2>
+
+    <p id="m4-quiz-descripcion">
+        Lee cada afirmación y selecciona si es verdadera o falsa.
+    </p>
+
+
+    <div class="quiz-pregunta">
+
+        <h3 id="m4-pregunta1">
+            1. Es recomendable utilizar contraseñas diferentes
+            para nuestras cuentas importantes.
+        </h3>
+
+        <button onclick="responderSeguridad(1, 'verdadero', this)"
+                id="m4-p1-verdadero">
+            ✅ Verdadero
+        </button>
+
+        <button onclick="responderSeguridad(1, 'falso', this)"
+                id="m4-p1-falso">
+            ❌ Falso
+        </button>
+
+    </div>
+
+
+    <div class="quiz-pregunta">
+
+        <h3 id="m4-pregunta2">
+            2. Podemos compartir nuestra contraseña con cualquier
+            persona que nos la solicite por internet.
+        </h3>
+
+        <button onclick="responderSeguridad(2, 'verdadero', this)"
+                id="m4-p2-verdadero">
+            ✅ Verdadero
+        </button>
+
+        <button onclick="responderSeguridad(2, 'falso', this)"
+                id="m4-p2-falso">
+            ❌ Falso
+        </button>
+
+    </div>
+
+
+    <div class="quiz-pregunta">
+
+        <h3 id="m4-pregunta3">
+            3. Es importante revisar los enlaces antes de abrirlos.
+        </h3>
+
+        <button onclick="responderSeguridad(3, 'verdadero', this)"
+                id="m4-p3-verdadero">
+            ✅ Verdadero
+        </button>
+
+        <button onclick="responderSeguridad(3, 'falso', this)"
+                id="m4-p3-falso">
+            ❌ Falso
+        </button>
+
+    </div>
+
+
+    <div id="resultado-seguridad" class="resultado-quiz">
+
+        Responde las tres afirmaciones para conocer tu resultado.
+
+    </div>
+
+</section>
+
+        <!-- NAVEGACIÓN -->
+
+       <div class="navegacion-modulos">
+
+    <a href="modulo3-pomodoro.html" class="boton" id="m4-boton-anterior">
+        ← Módulo 3
+    </a>
+
+    <a href="modulo4-datos.html" class="boton" id="m4-boton-datos">
+        Protección de datos →
+    </a>
+
+</div>
+
+    </main>
+
+
+    <footer>
+
+        Aplicaciones Multimedia - UNAD | María Valentina Céspedes Cuenca
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

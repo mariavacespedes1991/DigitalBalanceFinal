@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Módulo 1 - Beneficios | Digital Balance</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="pagina-modulo">
+
+    <header>
+
+        <div class="logo">
+            💙 Digital Balance
+        </div>
+
+        <nav>
+
+            <a href="index.html" id="m1b-menu-inicio">
+                Inicio
+            </a>
+
+            <div class="menu-modulos">
+
+                <a href="#" id="m1b-menu-modulos">
+                    Módulos ▾
+                </a>
+
+                <div class="submenu">
+
+                    <a href="modulo1.html" class="m1b-submenu-modulo">
+                        Módulo 1
+                    </a>
+
+                    <a href="modulo2.html" class="m1b-submenu-modulo">
+                        Módulo 2
+                    </a>
+
+                    <a href="modulo3.html" class="m1b-submenu-modulo">
+                        Módulo 3
+                    </a>
+
+                    <a href="modulo4.html" class="m1b-submenu-modulo">
+                        Módulo 4
+                    </a>
+
+                    <a href="modulo5.html" class="m1b-submenu-modulo">
+                        Módulo 5
+                    </a>
+
+                </div>
+
+            </div>
+
+            <a href="creditos.html" id="m1b-menu-creditos">
+                Créditos
+            </a>
+
+            <div class="idioma">
+
+                <button onclick="guardarYTraducir('es')">
+                    ES
+                </button>
+
+                <span>|</span>
+
+                <button onclick="guardarYTraducir('en')">
+                    EN
+                </button>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <main class="modulo">
+
+        <section class="introduccion-modulo">
+
+            <div class="texto-modulo">
+
+                <span class="etiqueta" id="m1b-etiqueta">
+                    MÓDULO 1
+                </span>
+
+                <h1 id="m1b-titulo">
+                    Beneficios de los buenos hábitos digitales
+                </h1>
+
+                <p id="m1b-descripcion">
+                    Los buenos hábitos digitales pueden ayudarnos a cuidar
+                    nuestro descanso, organizar mejor nuestro tiempo y
+                    mantener espacios para compartir con otras personas
+                    sin depender constantemente de las pantallas.
+                </p>
+
+            </div>
+
+            <div class="imagen-modulo">
+
+                <img src="imagenes/bienestar.png"
+                     alt="Ilustración sobre bienestar digital">
+
+            </div>
+
+        </section>
+
+
+        <section class="beneficios">
+
+            <h2 id="m1b-beneficios-titulo">
+                🌱 Descubre los beneficios de los buenos hábitos digitales
+            </h2>
+
+            <p class="instruccion" id="m1b-beneficios-instruccion">
+                Selecciona un hábito para conocer uno de sus beneficios.
+            </p>
+
+            <div class="beneficios-botones">
+
+                <button id="m1b-beneficio-descanso"
+                        onclick="mostrarBeneficio('descanso')">
+                    😴 Dormir bien
+                </button>
+
+                <button id="m1b-beneficio-pausas"
+                        onclick="mostrarBeneficio('pausas')">
+                    📵 Hacer pausas
+                </button>
+
+                <button id="m1b-beneficio-familia"
+                        onclick="mostrarBeneficio('familia')">
+                    👨‍👩‍👧 Tiempo sin pantallas
+                </button>
+
+            </div>
+
+            <div id="resultado-beneficio" class="informacion">
+
+                Selecciona un hábito para descubrir su beneficio.
+
+            </div>
+
+        </section>
+
+
+        <div class="navegacion-modulos">
+
+            <a href="modulo1.html"
+               class="boton"
+               id="m1b-boton-anterior">
+                ← Módulo 1
+            </a>
+
+            <a href="modulo2.html"
+               class="boton"
+               id="m1b-boton-siguiente">
+                Módulo 2 →
+            </a>
+
+        </div>
+
+    </main>
+
+
+    <footer>
+
+        Aplicaciones Multimedia - UNAD | María Valentina Céspedes Cuenca
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

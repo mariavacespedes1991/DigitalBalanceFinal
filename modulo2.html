@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Módulo 2 - Gestión del tiempo digital</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body class="pagina-modulo">
+
+    <header>
+
+        <div class="logo">
+            💙 Digital Balance
+        </div>
+
+        <nav>
+
+    <a href="index.html" id="m2-menu-inicio">Inicio</a>
+
+    <div class="menu-modulos">
+
+        <a href="#" id="m2-menu-modulos">Módulos ▾</a>
+
+        <div class="submenu">
+
+            <a href="modulo1.html" id="m2-submenu-modulo1">Módulo 1</a>
+            <a href="modulo2.html" id="m2-submenu-modulo2">Módulo 2</a>
+            <a href="modulo3.html" id="m2-submenu-modulo3">Módulo 3</a>
+            <a href="modulo4.html" id="m2-submenu-modulo4">Módulo 4</a>
+            <a href="modulo5.html" id="m2-submenu-modulo5">Módulo 5</a>
+
+        </div>
+
+    </div>
+
+    <a href="creditos.html" id="m2-menu-creditos">Créditos</a>
+
+    <div class="idioma">
+
+        <button onclick="guardarYTraducir('es')">ES</button>
+
+        <span>|</span>
+
+        <button onclick="guardarYTraducir('en')">EN</button>
+
+    </div>
+
+</nav>
+
+    </header>
+
+
+    <main class="modulo">
+
+        <section class="introduccion-modulo">
+
+            <div class="texto-modulo">
+
+              <span class="etiqueta" id="m2-etiqueta">MÓDULO 2</span>
+
+             <h1 id="m2-titulo">Hábitos digitales saludables</h1>
+
+             <p id="m2-descripcion">
+             Los hábitos digitales saludables nos ayudan a utilizar la
+             tecnología de una manera más equilibrada. Pequeñas acciones
+             como descansar de las pantallas, organizar nuestras actividades
+             y cuidar nuestros momentos de estudio pueden mejorar nuestra
+             experiencia con la tecnología.
+             </p>
+            </div>
+
+
+            <div class="imagen-modulo">
+
+                <img src="imagenes/tiempo.png"
+                     alt="Ilustración sobre gestión del tiempo digital">
+
+            </div>
+
+        </section>
+
+
+        <section class="seccion-tarjetas">
+
+            <h2 id="m2-tarjetas-titulo">
+                Claves para administrar mejor tu tiempo</h2>
+
+            <p class="instruccion" id="m2-tarjetas-instruccion">
+                Haz clic sobre cada tarjeta para conocer más.
+            </p>
+
+
+            <div class="tarjetas">
+
+    <div class="tarjeta" onclick="mostrarHabito('descanso')">
+
+        <div class="icono">😴</div>
+
+        <h3 id="m2-tarjeta1">Descansar de las pantallas</h3>
+
+           <p id="m2-tarjeta1-desc">
+             Realizar pausas durante el uso de dispositivos ayuda
+              a cuidar el bienestar y la concentración.
+           </p>
+
+    </div>
+
+
+    <div class="tarjeta" onclick="mostrarHabito('estudio')">
+
+        <div class="icono">📚</div>
+
+        <h3 id="m2-tarjeta2">Cuidar el estudio</h3>
+
+        <p id="m2-tarjeta2-desc">
+          Evitar distracciones digitales permite aprovechar mejor
+          el tiempo dedicado a las actividades académicas.
+        </p>
+
+    </div>
+
+
+    <div class="tarjeta" onclick="mostrarHabito('equilibrio')">
+
+        <div class="icono">⚖️</div>
+
+        <h3 id="m2-tarjeta3">Mantener el equilibrio</h3>
+
+            <p id="m2-tarjeta3-desc">
+              Combinar el uso de la tecnología con otras actividades
+              ayuda a mantener hábitos más saludables.
+            </p>
+
+    </div>
+
+</div>
+
+
+<div id="informacion-habito" class="informacion">
+
+    Haz clic en un hábito para conocer más.
+
+</div>
+
+
+        </section>
+
+        <div class="navegacion-modulos">
+
+    <a href="modulo1-beneficios.html" class="boton" id="m2-boton-anterior">
+        ← Módulo 1
+    </a>
+
+    <a href="modulo2-rutina.html" class="boton" id="m2-boton-rutina">
+        Rutina →
+    </a>
+
+</div>
+    </main>
+
+
+    <footer>
+
+        Aplicaciones Multimedia - UNAD | María Valentina Céspedes Cuenca
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

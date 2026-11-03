@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Módulo 4 - Protección de datos</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body class="pagina-modulo">
+
+    <header>
+
+        <div class="logo">
+            💙 Digital Balance
+        </div>
+
+        <nav>
+
+            <a href="index.html" id="m4d-menu-inicio">
+                Inicio
+            </a>
+
+            <div class="menu-modulos">
+
+                <a href="#" id="m4d-menu-modulos">
+                    Módulos ▾
+                </a>
+
+                <div class="submenu">
+
+                    <a href="modulo1.html">Módulo 1</a>
+                    <a href="modulo2.html">Módulo 2</a>
+                    <a href="modulo3.html">Módulo 3</a>
+                    <a href="modulo4.html">Módulo 4</a>
+                    <a href="modulo5.html">Módulo 5</a>
+
+                </div>
+
+            </div>
+
+            <a href="creditos.html" id="m4d-menu-creditos">
+                Créditos
+            </a>
+
+            <div class="idioma">
+
+                <button onclick="guardarYTraducir('es')">
+                    ES
+                </button>
+
+                <span>|</span>
+
+                <button onclick="guardarYTraducir('en')">
+                    EN
+                </button>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <main class="modulo">
+
+        <section class="introduccion-modulo">
+
+            <div class="texto-modulo">
+
+                <span class="etiqueta" id="m4d-etiqueta">
+                    MÓDULO 4
+                </span>
+
+                <h1 id="m4d-titulo">
+                    Protección de datos
+                </h1>
+
+                <p id="m4d-descripcion">
+                    Proteger nuestros datos personales es importante
+                    cuando utilizamos internet y diferentes servicios
+                    digitales. Podemos tomar algunas medidas sencillas
+                    para cuidar nuestra información.
+                </p>
+
+            </div>
+
+
+            <div class="imagen-modulo">
+
+                <img src="imagenes/ciberseguridad.png"
+                     alt="Ilustración sobre protección de datos">
+
+            </div>
+
+        </section>
+
+
+        <section class="seccion-tarjetas">
+
+            <h2 id="m4d-proteccion-titulo">
+                🔐 Protección de datos
+            </h2>
+
+            <p class="instruccion" id="m4d-proteccion-instruccion">
+                Haz clic en una tarjeta para conocer una forma de
+                proteger tus datos personales.
+            </p>
+
+
+            <div class="tarjetas">
+
+                <div class="tarjeta"
+                     onclick="mostrarProteccion('contrasena')">
+
+                    <div class="icono">
+                        🔑
+                    </div>
+
+                    <h3 id="m4d-contrasena">
+                        Contraseñas seguras
+                    </h3>
+
+                    <p id="m4d-contrasena-desc">
+                        Protege tus cuentas utilizando contraseñas seguras.
+                    </p>
+
+                </div>
+
+
+                <div class="tarjeta"
+                     onclick="mostrarProteccion('privacidad')">
+
+                    <div class="icono">
+                        👤
+                    </div>
+
+                    <h3 id="m4d-privacidad">
+                        Privacidad
+                    </h3>
+
+                    <p id="m4d-privacidad-desc">
+                        Cuida la información personal que compartes.
+                    </p>
+
+                </div>
+
+
+                <div class="tarjeta"
+                     onclick="mostrarProteccion('enlaces')">
+
+                    <div class="icono">
+                        🔗
+                    </div>
+
+                    <h3 id="m4d-enlaces">
+                        Enlaces seguros
+                    </h3>
+
+                    <p id="m4d-enlaces-desc">
+                        Revisa los enlaces antes de ingresar a ellos.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div id="informacion-proteccion" class="informacion">
+
+                Haz clic en una tarjeta para conocer más.
+
+            </div>
+
+        </section>
+
+
+        <!-- SITUACIONES DE LA VIDA COTIDIANA -->
+
+        <section class="seccion-tarjetas">
+
+            <h2 id="m4d-situaciones-titulo">
+                🏠 Situaciones de la vida cotidiana: ¿qué harías?
+            </h2>
+
+            <p class="instruccion" id="m4d-situaciones-instruccion">
+                Haz clic en cada situación para descubrir cómo cuidar
+                tus datos personales en el día a día.
+            </p>
+
+
+            <div class="tarjetas">
+
+                <div class="tarjeta"
+                     onclick="mostrarSituacion('codigo')">
+
+                    <div class="icono">💬</div>
+
+                    <h3 id="m4d-situacion-codigo">
+                        Un código por WhatsApp
+                    </h3>
+
+                    <p id="m4d-situacion-codigo-desc">
+                        Alguien te pide el código que te llegó por SMS.
+                    </p>
+
+                </div>
+
+
+                <div class="tarjeta"
+                     onclick="mostrarSituacion('premio')">
+
+                    <div class="icono">🎁</div>
+
+                    <h3 id="m4d-situacion-premio">
+                        "¡Ganaste un premio!"
+                    </h3>
+
+                    <p id="m4d-situacion-premio-desc">
+                        Un mensaje te pide tus datos para reclamar un premio.
+                    </p>
+
+                </div>
+
+
+                <div class="tarjeta"
+                     onclick="mostrarSituacion('wifi')">
+
+                    <div class="icono">📶</div>
+
+                    <h3 id="m4d-situacion-wifi">
+                        Wi-Fi público
+                    </h3>
+
+                    <p id="m4d-situacion-wifi-desc">
+                        Te conectas a una red gratuita en el centro comercial.
+                    </p>
+
+                </div>
+
+
+                <div class="tarjeta"
+                     onclick="mostrarSituacion('foto')">
+
+                    <div class="icono">📸</div>
+
+                    <h3 id="m4d-situacion-foto">
+                        Publicar una foto
+                    </h3>
+
+                    <p id="m4d-situacion-foto-desc">
+                        Tu foto muestra dónde vives o estudias.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div id="informacion-situacion" class="informacion">
+
+                Selecciona una situación para conocer qué puedes hacer.
+
+            </div>
+
+        </section>
+
+
+        <div class="navegacion-modulos">
+
+            <a href="modulo4.html"
+               class="boton"
+               id="m4d-boton-anterior">
+                ← Módulo 4
+            </a>
+
+            <a href="modulo5.html"
+               class="boton"
+               id="m4d-boton-siguiente">
+                Módulo 5 →
+            </a>
+
+        </div>
+
+    </main>
+
+
+    <footer>
+
+        Aplicaciones Multimedia - UNAD | María Valentina Céspedes Cuenca
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

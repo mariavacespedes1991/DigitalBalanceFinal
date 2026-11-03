@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Módulo 3 - Técnica Pomodoro</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body class="pagina-modulo">
+
+    <header>
+
+        <div class="logo">
+            💙 Digital Balance
+        </div>
+
+        <nav>
+
+            <a href="index.html" id="m3p-menu-inicio">
+                Inicio
+            </a>
+
+            <div class="menu-modulos">
+
+                <a href="#" id="m3p-menu-modulos">
+                    Módulos ▾
+                </a>
+
+                <div class="submenu">
+
+                    <a href="modulo1.html">Módulo 1</a>
+                    <a href="modulo2.html">Módulo 2</a>
+                    <a href="modulo3.html">Módulo 3</a>
+                    <a href="modulo4.html">Módulo 4</a>
+                    <a href="modulo5.html">Módulo 5</a>
+
+                </div>
+
+            </div>
+
+            <a href="creditos.html" id="m3p-menu-creditos">
+                Créditos
+            </a>
+
+            <div class="idioma">
+
+                <button onclick="guardarYTraducir('es')">
+                    ES
+                </button>
+
+                <span>|</span>
+
+                <button onclick="guardarYTraducir('en')">
+                    EN
+                </button>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <main class="modulo">
+
+        <section class="introduccion-modulo">
+
+            <div class="texto-modulo">
+
+                <span class="etiqueta" id="m3p-etiqueta">
+                    MÓDULO 3
+                </span>
+
+                <h1 id="m3p-titulo">
+                    Técnica Pomodoro
+                </h1>
+
+                <p id="m3p-descripcion">
+                    La técnica Pomodoro consiste en organizar el tiempo
+                    de trabajo o estudio en periodos de concentración
+                    y descansos.
+                </p>
+
+            </div>
+
+
+            <div class="imagen-modulo">
+
+                <img src="imagenes/tiempo.png"
+                     alt="Ilustración sobre la técnica Pomodoro">
+
+            </div>
+
+        </section>
+
+
+        <section class="reto-tiempo">
+
+            <h2 id="m3p-pomodoro-titulo">
+                🍅 Técnica Pomodoro
+            </h2>
+
+            <p id="m3p-pomodoro-descripcion">
+                Conoce los pasos básicos de esta técnica para organizar
+                mejor tus periodos de estudio o trabajo.
+            </p>
+
+
+            <div class="tarjetas">
+
+                <div class="tarjeta"
+                     onclick="mostrarPomodoro('concentracion')">
+
+                    <div class="icono">📚</div>
+
+                    <h3 id="m3p-concentracion">
+                        Tiempo de concentración
+                    </h3>
+
+                    <p id="m3p-concentracion-desc">
+                        Mantén tu atención en una sola actividad.
+                    </p>
+
+                </div>
+
+
+                <div class="tarjeta"
+                     onclick="mostrarPomodoro('descanso')">
+
+                    <div class="icono">☕</div>
+
+                    <h3 id="m3p-descanso">
+                        Tiempo de descanso
+                    </h3>
+
+                    <p id="m3p-descanso-desc">
+                        Haz una pausa para recuperar energía.
+                    </p>
+
+                </div>
+
+
+                <div class="tarjeta"
+                     onclick="mostrarPomodoro('repetir')">
+
+                    <div class="icono">🔄</div>
+
+                    <h3 id="m3p-repetir">
+                        Repetir el ciclo
+                    </h3>
+
+                    <p id="m3p-repetir-desc">
+                        Después del descanso puedes comenzar nuevamente.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div id="informacion-pomodoro" class="informacion">
+
+                Haz clic en una tarjeta para conocer más.
+
+            </div>
+
+        </section>
+
+
+        <div class="navegacion-modulos">
+
+            <a href="modulo3.html"
+               class="boton"
+               id="m3p-boton-anterior">
+                ← Módulo 3
+            </a>
+
+            <a href="modulo4.html"
+               class="boton"
+               id="m3p-boton-siguiente">
+                Módulo 4 →
+            </a>
+
+        </div>
+
+    </main>
+
+
+    <footer>
+
+        Aplicaciones Multimedia - UNAD | María Valentina Céspedes Cuenca
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Módulo 1 - Bienestar Digital</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="pagina-modulo">
+
+    <header>
+
+        <div class="logo">
+            💙 Digital Balance
+        </div>
+
+        <nav>
+    <a href="index.html" id="menu-inicio">Inicio</a>
+
+    <div class="menu-modulos">
+        <a href="#" id="menu-modulos">Módulos ▾</a>
+
+        <div class="submenu">
+    <a href="modulo1.html" id="submenu-modulo1">Módulo 1</a>
+    <a href="modulo2.html" id="submenu-modulo2">Módulo 2</a>
+    <a href="modulo3.html" id="submenu-modulo3">Módulo 3</a>
+    <a href="modulo4.html" id="submenu-modulo4">Módulo 4</a>
+    <a href="modulo5.html" id="submenu-modulo5">Módulo 5</a>
+</div>
+    </div>
+
+    <a href="creditos.html" id="menu-creditos">Créditos</a>
+
+    <div class="idioma">
+        <button onclick="guardarYTraducir('es')">ES</button>
+        <span>|</span>
+        <button onclick="guardarYTraducir('en')">EN</button>
+    </div>
+</nav>
+
+    </header>
+
+
+    <main class="modulo">
+
+        <section class="introduccion-modulo">
+
+            <div class="texto-modulo">
+
+                <span class="etiqueta" id="etiqueta-modulo1">MÓDULO 1</span>
+
+                <h1 id="titulo-modulo1">¿Qué es el bienestar digital?</h1>
+
+                <p id="descripcion-modulo1">
+                    El bienestar digital consiste en mantener una relación
+                    saludable y equilibrada con la tecnología. No significa
+                    dejar de utilizar los dispositivos, sino aprender a usarlos
+                    de una forma que beneficie nuestra vida, nuestro estudio,
+                    nuestro descanso y nuestras relaciones.
+                </p>
+
+            </div>
+
+            <div class="imagen-modulo">
+
+                <img src="imagenes/bienestar.png"
+                     alt="Ilustración sobre bienestar digital">
+
+            </div>
+
+        </section>
+
+
+        <section class="seccion-tarjetas">
+
+            <h2 id="m1-elementos-titulo">Descubre los elementos del bienestar digital</h2>
+
+            <p class="instruccion" id="m1-tarjetas-instruccion">
+                Haz clic sobre cada tarjeta para conocer más.
+            </p>
+
+
+            <div class="tarjetas">
+
+
+                <div class="tarjeta" onclick="mostrarInformacion('equilibrio')">
+
+                    <div class="icono">⚖️</div>
+
+                    <h3 id="m1-tarjeta1">Uso equilibrado</h3>
+
+                    <p id="m1-tarjeta1-desc">
+                        Aprende a distribuir mejor el tiempo que utilizas
+                        frente a las pantallas.
+                    </p>
+
+                </div>
+
+
+                <div class="tarjeta" onclick="mostrarInformacion('salud')">
+
+                    <div class="icono">💙</div>
+
+                    <h3 id="m1-tarjeta2">Salud y bienestar</h3>
+
+                    <p id="m1-tarjeta2-desc">
+                        Cuida tu descanso, concentración y salud mientras
+                        utilizas la tecnología.
+                    </p>
+
+                </div>
+
+
+                <div class="tarjeta" onclick="mostrarInformacion('vida')">
+
+                    <div class="icono">🌱</div>
+
+                    <h3 id="m1-tarjeta3">Vida personal y estudio</h3>
+
+                    <p id="m1-tarjeta3-desc">
+                        Encuentra un equilibrio entre el mundo digital y
+                        las actividades de tu vida diaria.
+                    </p>
+
+                </div>
+
+            </div>
+
+</div>
+
+            <div id="informacion" class="informacion">
+                Haz clic en una tarjeta para descubrir más información.
+            </div>
+
+    
+        </section>
+
+
+        <section class="test-bienestar">
+
+            <h2 id="m1-quiz-titulo">¿Cómo están tus hábitos digitales?</h2>
+
+            <p id="m1-quiz-descripcion">
+                Responde estas preguntas para conocer mejor tus hábitos
+                relacionados con el uso de la tecnología.
+            </p>
+
+            <div class="pregunta">
+
+               <h3 id="m1-pregunta1">
+                    1. ¿Cuánto tiempo pasas normalmente frente a una pantalla?</h3>
+
+                <button id="m1-r1-1" onclick="seleccionarRespuesta(1, 'poco', this)">
+                   Menos de 2 horas
+                </button>
+
+                 <button id="m1-r1-2" onclick="seleccionarRespuesta(1, 'medio', this)">
+                   Entre 2 y 5 horas
+                </button>
+
+<button id="m1-r1-3" onclick="seleccionarRespuesta(1, 'mucho', this)">
+    Más de 5 horas
+</button>
+
+            </div>
+
+            <div class="pregunta">
+
+                <h3 id="m1-pregunta2">  
+                    2. ¿Sueles descansar de las pantallas durante el día?</h3>
+
+                <button id="m1-r2-1" onclick="seleccionarRespuesta(2, 'poco', this)">
+                  Sí, con frecuencia
+                </button>
+
+                <button id="m1-r2-2" onclick="seleccionarRespuesta(2, 'medio', this)">
+                   Algunas veces
+                </button>
+
+                 <button id="m1-r2-3" onclick="seleccionarRespuesta(2, 'mucho', this)">
+                 Casi nunca
+                </button>
+
+            </div>
+
+            <div class="pregunta">
+
+               <h3 id="m1-pregunta3">
+                    3. ¿Utilizas el celular mientras estudias?</h3>
+
+                <button id="m1-r3-1" onclick="seleccionarRespuesta(3, 'poco', this)">
+                  Casi nunca
+                </button>
+
+                <button id="m1-r3-2" onclick="seleccionarRespuesta(3, 'medio', this)">
+                   Algunas veces
+                </button>
+
+                 <button id="m1-r3-3" onclick="seleccionarRespuesta(3, 'mucho', this)">
+                  Frecuentemente
+                </button>
+
+            </div>
+
+            <div id="resultado-test">
+                Selecciona una respuesta en cada pregunta.
+            </div>
+
+        </section>
+            
+<div class="navegacion-modulos">
+
+    <a href="index.html" class="boton" id="m1-boton-inicio">
+        ← Inicio
+    </a>
+
+    <a href="modulo1-beneficios.html" class="boton" id="m1-boton-beneficios">
+        Beneficios →
+    </a>
+
+</div>
+
+</div>
+    </main>
+
+
+    <footer>
+
+        Aplicaciones Multimedia - UNAD | María Valentina Céspedes Cuenca
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+    </body>
+
+
+</html>

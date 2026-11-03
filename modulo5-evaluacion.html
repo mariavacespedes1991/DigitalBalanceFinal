@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Módulo 5 - Evaluación final</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body class="pagina-modulo">
+
+    <header>
+
+        <div class="logo">
+            💙 Digital Balance
+        </div>
+
+        <nav>
+
+            <a href="index.html" id="m5e-menu-inicio">
+                Inicio
+            </a>
+
+            <div class="menu-modulos">
+
+                <a href="#" id="m5e-menu-modulos">
+                    Módulos ▾
+                </a>
+
+                <div class="submenu">
+
+    <a href="modulo1.html" id="m5e-submenu-modulo1">
+        Módulo 1
+    </a>
+
+    <a href="modulo2.html" id="m5e-submenu-modulo2">
+        Módulo 2
+    </a>
+
+    <a href="modulo3.html" id="m5e-submenu-modulo3">
+        Módulo 3
+    </a>
+
+    <a href="modulo4.html" id="m5e-submenu-modulo4">
+        Módulo 4
+    </a>
+
+    <a href="modulo5.html" id="m5e-submenu-modulo5">
+        Módulo 5
+    </a>
+
+</div>
+
+            </div>
+
+            <a href="creditos.html" id="m5e-menu-creditos">
+                Créditos
+            </a>
+
+            <div class="idioma">
+
+                <button onclick="guardarYTraducir('es')">
+                    ES
+                </button>
+
+                <span>|</span>
+
+                <button onclick="guardarYTraducir('en')">
+                    EN
+                </button>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <main class="modulo">
+
+        <!-- EVALUACIÓN FINAL -->
+
+        <section class="quiz-rutina">
+
+    <span class="etiqueta" id="m5e-etiqueta">
+        MÓDULO 5
+    </span>
+
+    <h1 id="m5e-titulo">
+        Evaluación final
+    </h1>
+
+    <p id="m5e-descripcion">
+        Responde las cinco preguntas y revisa tu puntuación al finalizar.
+    </p>
+
+
+    <div class="quiz-pregunta">
+        <h3 id="m5e-pregunta1">
+            1. ¿Qué significa tener un buen bienestar digital?
+        </h3>
+        <button id="m5e-p1-1" onclick="responderFinal(1, 'correcta', this)">
+            ⚖️ Mantener un equilibrio en el uso de la tecnología
+        </button>
+        <button id="m5e-p1-2" onclick="responderFinal(1, 'incorrecta', this)">
+            📱 Utilizar dispositivos durante todo el día
+        </button>
+    </div>
+
+
+    <div class="quiz-pregunta">
+        <h3 id="m5e-pregunta2">
+            2. ¿Qué es recomendable hacer después de pasar bastante tiempo frente a una pantalla?
+        </h3>
+        <button id="m5e-p2-1" onclick="responderFinal(2, 'correcta', this)">
+            👀 Hacer una pausa y descansar
+        </button>
+        <button id="m5e-p2-2" onclick="responderFinal(2, 'incorrecta', this)">
+            💻 Continuar sin descansar
+        </button>
+    </div>
+
+
+    <div class="quiz-pregunta">
+        <h3 id="m5e-pregunta3">
+            3. ¿Qué ayuda a organizar mejor el tiempo?
+        </h3>
+        <button id="m5e-p3-1" onclick="responderFinal(3, 'correcta', this)">
+            📅 Planificar las actividades
+        </button>
+        <button id="m5e-p3-2" onclick="responderFinal(3, 'incorrecta', this)">
+            ⏰ Dejar todas las actividades para el último momento
+        </button>
+    </div>
+
+
+    <div class="quiz-pregunta">
+        <h3 id="m5e-pregunta4">
+            4. ¿Qué debes hacer para proteger tus datos personales?
+        </h3>
+        <button id="m5e-p4-1" onclick="responderFinal(4, 'correcta', this)">
+            🔐 Cuidar tus contraseñas y la información personal
+        </button>
+        <button id="m5e-p4-2" onclick="responderFinal(4, 'incorrecta', this)">
+            📢 Compartir tus datos con cualquier persona
+        </button>
+    </div>
+
+
+    <div class="quiz-pregunta">
+        <h3 id="m5e-pregunta5">
+            5. ¿Qué debes hacer antes de abrir un enlace sospechoso?
+        </h3>
+        <button id="m5e-p5-1" onclick="responderFinal(5, 'correcta', this)">
+            🔎 Revisar de dónde proviene
+        </button>
+        <button id="m5e-p5-2" onclick="responderFinal(5, 'incorrecta', this)">
+            🔗 Abrirlo inmediatamente
+        </button>
+    </div>
+
+
+    <div id="resultado-final" class="resultado-quiz">
+        Responde las cinco preguntas para conocer tu puntuación.
+    </div>
+
+</section>
+
+
+        <!-- NAVEGACIÓN -->
+
+        <div class="navegacion-modulos">
+
+            <a href="modulo5.html" class="boton" id="m5e-boton-anterior">
+                ← Módulo 5
+            </a>
+
+            <a href="index.html" class="boton" id="m5e-boton-inicio">
+                Inicio
+            </a>
+
+        </div>
+
+    </main>
+
+
+    <footer>
+
+        Aplicaciones Multimedia - UNAD | María Valentina Céspedes Cuenca
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
